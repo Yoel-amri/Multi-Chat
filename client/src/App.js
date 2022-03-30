@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route exact path="/" element={<Navigate to="/login" />} />
         <Route path='/login' element={<Login username={username} setUsername={setUsername} />}/>
         <Route path='/chat' element={<Chat username={username} socket={socket} />}/>
         <Route path='/chat/:chatId' element={<Chat username={username} socket={socket} />} />
