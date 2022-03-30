@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const http = require("http");
 const cors = require("cors");
+const port = process.env.PORT;
 const { Server } = require("socket.io");
 app.use(cors());
 
@@ -40,6 +41,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-server.listen(3001, () => {
+server.listen(port, () => {
   console.log("multi chat app runnning !");
 });
