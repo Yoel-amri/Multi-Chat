@@ -6,7 +6,7 @@ import { Routes , Route, useNavigate, Navigate} from "react-router-dom";
 import Rooms from "./Components/Rooms";
 import {Login} from './Components/Login';
 
-const socket = io.connect("http://multi-chat-application.herokuapp.com");
+const socket = io.connect("https://multi-chat-application.herokuapp.com");
 
 function App() {
   const [username, setUsername] = useState('');
