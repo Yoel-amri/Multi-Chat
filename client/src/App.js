@@ -2,7 +2,7 @@ import "./App.css";
 import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
-import { Routes , Route, useNavigate} from "react-router-dom";
+import { Routes , Route, useNavigate, Navigate} from "react-router-dom";
 import Rooms from "./Components/Rooms";
 import {Login} from './Components/Login';
 
